@@ -53,6 +53,38 @@ export default Nav;
             )
           }
         
+# Styling
+
+Metode 1: Inline CSS
+
+    <nav style={{padding: '150px', color: 'green'}}>
+    
+Metode 2: CSS objects
+
+    const navStyle = {
+      padding: '200px 0',
+      backgroundColor: '#fff',
+      color: '#333'
+    }
+
+    const borderStyle = {
+        border: "1px solid green",
+    }
+
+    function Nav(){
+        return(
+            <nav style={navStyle}>
+                <h1 style={borderStyle}>Hej fra navbar</h1>
+            </nav>
+        )
+    }
+        
+Metode 3: Stylesheet
+  1. Opret et stylesheet og kald den fx Nav.css
+  2. Importere den:
+  
+    import styles from './Nav.css';
+    
 # react-router-dom
 
 1. Installer react-router-dom:
