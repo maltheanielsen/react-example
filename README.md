@@ -30,7 +30,7 @@ Oprettelse af komponent i /components:
           )
         }
 
-export default Nav;
+        export default Nav;
 
 3. Brug dit komponent i App.js
     - Tilføj en import
@@ -121,3 +121,64 @@ Metode 3: Stylesheet
         }
 
 Under Route tilføjer du den komponent du vil have vist, når man trykker på linket. Her kalder jeg Homepage-komponentet og About-komponentet.
+
+# React class
+
+Ligesom function(al) components har React også class components. Brug dem - medmindre, at din komponent "kun" skal præsentere noget.
+En class component nedarver fra React.Component og derfor skal både React importeres og 'extends' til - og nå, den kræver også en render() metode for at returnere HTML'en:
+
+      import React from 'react';
+
+      class Sjov extends React.Component{
+          render(){
+              return(
+                  <>
+                      <h1>Hej fra class component</h1>
+                 </>
+              )
+          }
+      }
+
+      export default Sjov;
+      
+      
+Både props og states er objekter der gemmer på information, men alligevel er de forskellige:
+- States bruges i et komponent (svarer til lokale variabler)  
+- Props giver man med til sine komponenter (svarer til parameter i en funktion)
+
+Eksempel med state, hvor vi skifter værdien:
+
+      constructor(){
+              super(); //Giver adgang til alle "parents" funktioner
+              this.state = {car: 'audi'};
+          }
+          render(){
+              return(
+                  <>
+                      <h1>Hej fra min {this.state.car}</h1>
+                      <button onClick={() => this.setState({car: 'mercedes'})}>Klik mig</button>
+                 </>
+              )
+          }
+
+Eksempel med probs, hvor vi sender en værdi med når vi kalder komponentet:
+Her kalder vi vores komponent:
+
+      <Person name="Malthe"/> 
+         
+Sådan ser vores class component ud:
+
+import React from 'react';
+
+      class Person extends React.Component{
+          render(){
+              return(
+                  <h1>Hej fra {this.props.name}</h1>
+              )
+          }
+      }
+
+      export default Person;
+         
+         
+
