@@ -140,7 +140,8 @@ En class component nedarver fra React.Component og derfor skal både React impor
       }
 
       export default Sjov;
-      
+  
+# Props og States
       
 Både props og states er objekter der gemmer på information, men alligevel er de forskellige:
 - States bruges i et komponent (svarer til lokale variabler)  
