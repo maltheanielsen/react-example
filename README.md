@@ -107,9 +107,7 @@ Metode 3: Stylesheet
           return (
             <Router>
               <Link to="/">Home</Link>
-
               <Link to="/about">About</Link>
-
               <Switch>
                 <Route exact path="/">
                   <Homepage />
