@@ -2,14 +2,15 @@
 Learn React 
 
 Terminal/Powershell kommandoer:
-  ls (list files and directories)
-  cd (change directory)
-  cd .. (gå tilbage)
 
-  npx create-react-app hello-world (opretter et projekt med navnet hello-world)
-  code . (åbner nuværende folder i VS code)
-  npm start (for at starte serveren og køre React projekt)
-  ctrl + c (lukke serveren ned)
+      ls (list files and directories)
+      cd (change directory)
+      cd .. (gå tilbage)
+
+      npx create-react-app hello-world (opretter et projekt med navnet hello-world)
+      code . (åbner nuværende folder i VS code)
+      npm start (for at starte serveren og køre React projekt)
+      ctrl + c (lukke serveren ned)
 
 React projekt - foldere I skal arbejde i:
   - public (til billeder eller andre assets)
@@ -37,7 +38,7 @@ export default Nav;
           import Nav from './components/Nav.js';
           
     - Brug dit komponent sådan her:
-   
+
           <Nav />
           
     - Hvis, der er flere komponenter, så skal de alle være under et element. Sådan her:
