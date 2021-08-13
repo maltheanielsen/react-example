@@ -181,5 +181,52 @@ import React from 'react';
 
       export default Person;
          
-         
+
+# Map
+
+Vi kan bruge map() når vi vil løbe vores lister igennem.
+
+I dette eksempel opretter jeg en liste og gør værdierne til list items
+
+      import React from 'react';
+
+      class Car extends React.Component{
+          state = {
+              cars: ["bmw", "audi", "mercedes"]
+          }
+
+          render(){
+              return(
+                  <>
+                      <h1>Hej fra leg</h1>
+                      <ul>{this.state.cars.map(car =>
+                          <li>{car}</li>
+                      )}</ul>
+                  </>
+              )
+          }
+      }
+
+      export default Car;
+
+Vi returnerer den på følgende måde
+
+# API (Axios)
+
+      npm install axios
+
+Brug Axios i componentDidMount(). Alt i den metode bliver kørt EFTER komponentet er indlæst.
+
+      componentDidMount(){
+        axios.get("https://jsonplaceholder.typicode.com/users")
+        .then(result => {
+            this.setState({names: result.data});
+        })
+      }
+      
+Brug map til at render det med:
+
+      <ul>{this.state.names.map(name => (
+         <li>{name.name}</li>
+      ))}</ul>
 
