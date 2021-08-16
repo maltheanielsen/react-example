@@ -211,6 +211,29 @@ I dette eksempel opretter jeg en liste og gør værdierne til list items
 
 Vi returnerer den på følgende måde
 
+# Objekter
+
+       state = {
+            cars: [
+                  {
+                        name: 'audi',
+                        color: 'grey',
+                        engine: 'tfsi'
+                  },
+                  {
+                        name: 'mercedes',
+                        color: 'green',
+                        engine: 'tdi'
+                  }
+            ]
+       }
+       
+De mappes igennem på følgende måde:
+
+      <ul>{this.state.cars.map(car => (
+         <li>{car.name}, {car.color}, {car.engine}</li>
+      ))}</ul>
+
 # API (Axios)
 
       npm install axios
