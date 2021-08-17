@@ -238,6 +238,10 @@ De mappes igennem på følgende måde:
 
       npm install axios
 
+Import: 
+
+      import axios from 'axios';
+
 Brug Axios i componentDidMount(). Alt i den metode bliver kørt EFTER komponentet er indlæst.
 
       componentDidMount(){
