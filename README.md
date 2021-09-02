@@ -257,3 +257,23 @@ Brug map til at render det med:
          <li>{name.name}</li>
       ))}</ul>
 
+# Bootstrap
+
+Installer Bootstrap med npm:
+
+      npm install bootstrap
+      
+Import det i enten app eller index
+
+      import 'bootstrap/dist/css/bootstrap.min.css';
+      
+Brug følgende classes for at gøre det responsivt: container -> row -> col-xx-x (fx col-md-3). (Tip: Hver række skal give 12)
+
+# Læg din app på en server
+
+Byg din app:
+
+      npm run build
+      
+Læg indholdet fra build-mappen på din server. Nemt!
+      
