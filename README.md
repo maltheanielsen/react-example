@@ -283,8 +283,8 @@ Subfolder:
 
 Tilføj følgende til package.json
 
-  },
-  "homepage": "https://web-mcdm.dk/[mappenavn]"
-}
+        },
+        "homepage": "https://web-mcdm.dk/[mappenavn]"
+      }
 
       
