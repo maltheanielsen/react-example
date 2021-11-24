@@ -276,4 +276,15 @@ Byg din app:
       npm run build
       
 Læg indholdet fra build-mappen på din server. Nemt!
+
+Obs - hvis problemer skulle opstå:
+
+Subfolder:
+
+Tilføj følgende til package.json
+
+  },
+  "homepage": "https://web-mcdm.dk/[mappenavn]"
+}
+
       
