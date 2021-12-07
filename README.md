@@ -100,18 +100,18 @@ Metode 3: Stylesheet
   
 3. Tilføj Router component med Link og Switch
 
-            function Nav() {
-                  return (
-                        <Router>
-                        <Link to="/">Home</Link>
-                        <Link to="/about">About</Link>
-                              <Routes>
-                                    <Route path="/home" element={ <Home />} />
-                                    <Route path="/home" element={ <About />} />
-                              </Routes>
-                        </Router>
-                  );
-            }
+      function Nav() {
+            return (
+                  <Router>
+                  <Link to="/">Home</Link>
+                  <Link to="/about">About</Link>
+                        <Routes>
+                              <Route path="/home" element={ <Home />} />
+                              <Route path="/home" element={ <About />} />
+                        </Routes>
+                  </Router>
+            );
+      }
       
 
 Under Route tilføjer du den komponent du vil have vist, når man trykker på linket. Her kalder jeg Homepage-komponentet og About-komponentet.
