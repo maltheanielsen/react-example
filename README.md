@@ -86,7 +86,7 @@ Metode 3: Stylesheet
   
     import styles from './Nav.css';
     
-# react-router-dom
+# react-router-dom - OBS: nye ændringer i v6.
 
 1. Installer react-router-dom:
 
@@ -94,11 +94,8 @@ Metode 3: Stylesheet
   
 2. Importere følgende til din nav bar
 
-        import {
-          BrowserRouter as Router,
-          Switch,
-          Route,
-          Link
+        import { 
+        BrowserRouter as Router, Routes, Route, Link 
         } from "react-router-dom";
   
 3. Tilføj Router component med Link og Switch
@@ -108,14 +105,10 @@ Metode 3: Stylesheet
             <Router>
               <Link to="/">Home</Link>
               <Link to="/about">About</Link>
-              <Switch>
-                <Route exact path="/">
-                  <Homepage />
-                </Route>
-                <Route path="/about">
-                  <About />
-                </Route>
-              </Switch>
+              <Routes>
+                    <Route path="/home" element={ <Home />} />
+                    <Route path="/home" element={ <About />} />
+                  </Routes>
             </Router>
           );
         }
